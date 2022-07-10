@@ -1,0 +1,35 @@
+.addtask{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+    width: 28vw;
+    justify-content: center;
+    align-items:center;
+    background-color:  hsl(235, 24%, 19%);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 2em;
+}
+
+input{
+  border-radius: 5px;
+  width: 25vw;
+  height: 8vh;
+  cursor: pointer;
+  color: white;
+  caret-color: hsl(220, 98%, 61%); /*input pointer color*/
+  outline: none;
+  border: none;
+  text-align: left;
+  background-color:  hsl(235, 24%, 19%);
+  font-size: 1em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
+}
+
+input:focus {
+  outline: none;
+}
+

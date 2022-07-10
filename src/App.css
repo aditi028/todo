@@ -1,11 +1,37 @@
 .App {
   text-align: center;
+  width: 99vw;
+  height: 97vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* row-gap: 2em; */
+  background-image: url('./assets/images/bg-desktop-dark.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+.apptitle{
+  text-align: left;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-size: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-content: center;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -35,4 +61,86 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.holder{
+  max-width: 28vw;
+  max-height: 40vh;
+  overflow: auto; 
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.holder::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.holder {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+
+
+.taskwrapper{
+  max-width: 28vw;
+  max-height: 40vh;
+  background-color:  hsl(235, 24%, 19%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  column-gap: 1em;
+  width: 28vw;
+  height: 6vh;
+  font-size: small;
+  border-top: 0.2px solid grey;
+  cursor: pointer;
+  color: grey;
+  justify-content: space-around;
+  align-items:center;
+  background-color:  hsl(235, 24%, 19%);
+  border-radius: 0 0 5px 5px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
+}
+
+.itemsLeft{
+  left: 1px;
+  width: 9vw;
+}
+
+.itemsLeft:hover{
+  color:white;
+}
+
+.centralMenu{
+  display: flex;
+  flex-direction: row;
+  column-gap: 1em;
+  width: 10vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.clearCompleted{
+  width: 9vw;
+}
+
+.clearCompleted:hover{
+  color:white;
+}
+
+.selectMenu{
+  font-weight: bold;
+  color: hsl(220, 98%, 61%);
 }
